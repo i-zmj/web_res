@@ -13,7 +13,7 @@
 // @history			1.4.1 切换服务器到izmj.net上
 
 var _headNode = document.getElementsByTagName('head')[0];
-var script = document.createElement("script");  //创建一个script标签
+var script = document.createElement("script");
 script.type = "text/javascript";
 script.src = "https://res.izmj.net/jenkins_param_helper/jenkins-function-script.js";
 _headNode.appendChild(script);
