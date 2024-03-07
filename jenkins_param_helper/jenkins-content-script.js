@@ -1,21 +1,21 @@
 // ==UserScript==
 // @name         	Jenkins编译辅助插件
-// @version      	1.4.1
+// @version      	1.4.2
 // @description  	进行编译的时候，提供额外的筛选按钮。如果功能不好使，请查看match路径是否正确
 // @author       	girakoo@163.com
-// @updateURL    	https://res.izmj.net/jenkins_param_helper/jenkins-content-script.js
-// @downloadURL  	https://res.izmj.net/jenkins_param_helper/jenkins-content-script.js
+// @updateURL    	https://izmj.gitee.io/res/jenkins_param_helper/jenkins-content-script.js
+// @downloadURL  	https://izmj.gitee.io/res/jenkins_param_helper/jenkins-content-script.js
 // @match      		*://*/*job/*/build*
 // @run-at       	document_end
 // ==/UserScript==
 
 // @history			1.4.0 移除特定IP的限制，通过匹配符进行访问
-// @history			1.4.1 切换服务器到izmj.net上
+// @history			1.4.2 切换服务器到izmj.gitee.io上
 
 var _headNode = document.getElementsByTagName('head')[0];
 var script = document.createElement("script");
 script.type = "text/javascript";
-script.src = "https://res.izmj.net/jenkins_param_helper/jenkins-function-script.js";
+script.src = "https://izmj.gitee.io/res/jenkins_param_helper/jenkins-function-script.js";
 _headNode.appendChild(script);
 
 //第一次加载的时候初始化样式文件
